@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-md-6 well">
+    <h1>Completados</h1>
+  <% @todos_completados.each do |t| %>
+    <%= t.description %><br>
+  <% end %>
+  </div>
+
+  <div class="col-md-6 well">
+    <h1>No Completados</h1>
+  <% @todos_no_completados.each do |t| %>
+    <%= t.description %><br>
+  <% end %>
+  </div>
+</div>

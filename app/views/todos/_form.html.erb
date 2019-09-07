@@ -1,0 +1,9 @@
+<div class="well">
+  <%= form_with model: @todo, local: true do |f| %>
+
+  <%= f.label :description  %><br>
+  <%= f.text_field :description %><br>
+
+  <button type="button" class="btn btn-success"><%= f.submit "Crear" %><br></button>
+  <% end %>
+</div>
